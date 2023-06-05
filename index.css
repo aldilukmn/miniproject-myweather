@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Quicksand:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header,
+footer {
+    background-color: #ebfffc;
+}
+
+header h1 {
+    color: #333;
+    font-size: 18px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+}
+
+footer h6 {
+    color: #333;
+    font-size: 18px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.card {
+    background: linear-gradient(135deg, #00feba, #7d75b1);
+    border-radius: 20px;
+    color: #fff;
+    max-width: 400px;
+    margin: 70px auto 0;
+    padding: 20px 0;
+    text-align: center;
+    width: 90%;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.search {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.search input {
+    background-color: rgba(235, 255, 252, .8);
+    border: 0;
+    border-radius: 30px;
+    color: #555;
+    font-size: 16px;
+    flex: 1;
+    margin-left: 40px;
+    padding: 10px 20px;
+    outline: 0;
+}
+
+.search input:focus {
+    background-color: rgba(235, 255, 252, 1);
+}
+
+.search button {
+    border: 0;
+    background-color: rgba(235, 255, 252, .8);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 40px;
+    outline: 0;
+    height: 45px;
+    width: 45px;
+}
+
+.search button:hover {
+    background-color: rgba(235, 255, 252, 1);
+}
+
+.search button img {
+    padding-top: 5px;
+    width: 18px;
+}
+
+.weather {
+    display: none;
+}
+
+.weather-icon {
+    margin-top: 30px;
+    width: 160px;
+}
+
+.weather h3 {
+    font-size: 60px;
+}
+
+.weather h4 {
+    font-size: 36px;
+    margin-top: -10px;
+}
+
+.details {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.col {
+    align-items: center;
+    display: flex;
+    text-align: left;
+}
+
+.col img {
+    margin-right: 10px;
+    width: 40px;
+}
+
+.humidity, .wind {
+    font-size: 18px;
+}
+
+.status {
+    font-size: 12px;
+}
+
+.error, .empty {
+    display: none;
+    margin-left: 40px;
+    margin-top: 20px;
+    text-align: left;
+}

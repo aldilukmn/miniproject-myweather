@@ -7,7 +7,7 @@ const empty = document.querySelector('.empty');
 
 const checkWeather = async (city) => {
     try {
-        const apiKey = '863242cfb2b1d357e6093d9a4df19a4b';
+        const apiKey = 'ad708e6970c4ce2a6c2fcaf11eea3f81';
         const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`;
         const options = {method: 'GET'};
         const response = await fetch(url, options);
